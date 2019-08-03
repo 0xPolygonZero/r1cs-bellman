@@ -1,0 +1,19 @@
+[package]
+name = "r1cs-bellman"
+description = "A bellman backend for the r1cs crate"
+version = "0.1.0"
+authors = ["Daniel Lubarov <daniel@mirprotocol.org>", "Brendan Farmer <brendan@mirprotocol.org>"]
+readme = "README.md"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/mir-protocol/r1cs-bellman"
+documentation = "https://docs.rs/r1cs-bellman"
+keywords = ["R1CS", "cryptography", "SNARK"]
+categories = ["cryptography"]
+maintenance = { status = "actively-developed" }
+edition = "2018"
+
+[dependencies]
+bellman = "0.1.0"
+pairing = "0.14.2"
+r1cs = "0.3.8"
+num = "0.2.0"
