@@ -1,0 +1,16 @@
+name: Continuous Integration
+
+on:
+  push:
+    branches: [master]
+  pull_request: ~
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Build
+      run: cargo build
+    - name: Run tests
+      run: cargo test
